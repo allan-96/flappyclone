@@ -58,6 +58,7 @@ namespace _flappyclone.player
         public void Restart()
         {
             _rigidbody2D.velocity = Vector2.zero;
+            transform.rotation = Quaternion.identity;
             transform.position = spawnPoint.position;
             _spriteRenderer.enabled = true;
         }
